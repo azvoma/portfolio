@@ -1,9 +1,7 @@
-
-/*For HTML & Body*/
 html, body {
   -webkit-font-smoothing: antialiased;
 }
-/*For Body & Background*/
+/* For Body*/
 body {
   background: #eee;
   font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
@@ -12,7 +10,8 @@ body {
   overflow-y: scroll;
   line-height: 21px;
 }
-/* For Logo Image*/
+
+/*Profile Logo Image*/
 .logo-image {
     
     width: 95px;
@@ -22,17 +21,43 @@ body {
     border-bottom-right-radius: 70%;
     border-bottom-left-radius: 70%;
 }
-/*For All Blacks Image*/
+
+
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #items .portfolio-item{
+    width:49%;
+  }
+  #items .portfolio-item:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #items .portfolio-item:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+  
+@media screen and (max-width: 600px)  {
+  #items .portfolio-item{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}
+
+/* All Blacks Images*/
 img {
   max-width: 100%;
 }
-/*For Headers*/
+/* Header Tags*/
 h1, h2, h3 {
   font-weight: 500;
   line-height: 1.1;
+  
   margin-bottom: .5rem;
 }
-//*For Header*//
+/*Header*/
 header {
     padding-top:10px;
 }
@@ -62,7 +87,7 @@ header .rightCol .career{
   font-weight: normal;
   line-height: 21px;
 }
-//* For Heading*//
+
 h2.heading {
   text-transform: uppercase;
   margin: 1.75rem 0;
@@ -80,7 +105,8 @@ h2.heading span{
   margin: 0 auto;
   padding:10px 20px;
 }
-//*Portfolio Items*//
+
+/*Portfolio Boxs*/
 #items {
   display: flex; 
   display: -webkit-box;
@@ -114,30 +140,9 @@ h2.heading span{
   margin-left:2%;
 }
 
-@media screen and (min-width: 600px) and (max-width: 850px)  {
-  #items .portfolio-item{
-    width:49%;
-  }
-  #items .portfolio-item:nth-child(odd) {
-    margin-right:2%;
-    margin-left:0px;
-  }
-  #items .portfolio-item:nth-child(even) {
-    margin-right:0px;
-    margin-left:0px;
-  }
-}
-  
-@media screen and (max-width: 600px)  {
-  #items .portfolio-item{
-    width:99%;
-    margin-right:0!important;
-    margin-left:0!important;
-    margin-bottom:20px;
-  }
-}
 
-/* For Footer*/
+
+/*Footer*/
 footer {
   max-width:980px;
   margin:0 auto;
